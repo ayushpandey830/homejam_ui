@@ -1,38 +1,332 @@
-.App {
-  text-align: center;
+ * {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #111;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+ .banner {
+background-size: cover;
+background-position: center center;
+          background-image: url("../public/image157.png");
+  object-fit: cover;
+  height: 720px;
   color: white;
+  
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.banner_contents {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
 }
 
-.App-link {
-  color: #61dafb;
+.banner_title {
+  position: absolute;
+width: 383px;
+height: 96px;
+left: 151px;
+top: 246px;
+
+font-family: Libre Baskerville;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 96px;
+
+
+display: flex;
+align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner_description {
+ position: absolute;
+width: 611px;
+height: 64px;
+left: 151px;
+top: 366px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+
+color: #FFFFFF;
+
+opacity: 0.6;
+}
+
+
+
+
+
+.banner--fadeBottom {
+  height: 23.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+
+.logo{
+    position: absolute;
+padding-left: 110px;
+
+}
+
+.menu{
+    padding-top: 4px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 1100px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.img1{
+    height: fit-content;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.img1>img{
+  margin-top: 4px;
+  margin-right: 2px;
+}
+.label{
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.number{
+    padding-left: 12px;
+    font-size: 19px;
+}
+
+.Label{
+    opacity: 0.5;
+   font-size: 12px;
+   padding-left: 4px;
+}
+.circle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    
+}
+
+.cards{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.reviews{
+    color: #FFFFFF;
+}
+
+.shows{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.shows::after{
+     content:'';
+  height:2px;
+  width:20%;
+  background:#0259EB;
+  position:absolute;
+  left:calc(0% - 0%);
+  bottom:-5px;
+
+}
+.card{ 
+  
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container-1{
+    color: #111229;
+    height: 387px;
+    width: 268px;
+    box-shadow: 10px -10px  rgb(129, 46, 238);
+  -moz-box-shadow: 10px -10px  rgb(129, 46, 238);
+  -webkit-box-shadow: 10px -10px  rgb(129, 46, 238);
+  -o-box-shadow: 10px -10px  rgb(129, 46, 238);
+  border-radius: 8px;
+}
+
+.img-2{
+     width: 268px;
+     height: 230px;
+}
+
+.category{  
+    margin-top: 12px;
+    font-size: 12px;
+    margin-left: 20px;
+    color: #682F26;
+    background-color:yellow ;
+    object-fit: contain;
+    border: 0ch;
+}
+
+.title{
+    margin-left: 20px;
+
+height: 32px;
+
+
+font-family: Libre Baskerville;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 32px;
+
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+
+.info{
+    color: #0259EB;
+    width: 101px;
+height: 32px;
+padding-right: 5px;
+
+
+
+}
+
+
+
+.infos{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.view{
+    color: yellow;
+}
+
+.reviews{
+     font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.reviews::after{
+     content:'';
+  height:2px;
+  width:30%;
+  background:#0259EB;
+  position:absolute;
+  left:calc(0% - 0%);
+  bottom:-5px;
+
+}
+
+.review{
+    padding-left: 140px;
+    padding-right: 140px;
+     padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.toggle{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+  object-fit: contain;
+}
+
+.page{
+    padding-top: 3px;
+}
+
+.head1{
+   
+    color: #111229;
+    height: 256px;
+    width: 368px;
+    box-shadow: 10px -10px  rgb(120, 171, 247);
+  -moz-box-shadow: 10px -10px  rgb(120, 171, 247);
+  -webkit-box-shadow: 10px -10px  rgb(120, 171, 247);
+  -o-box-shadow: 10px -10px  rgb(120, 171, 247);
+  border-radius: 8px;
+
+}
+
+
+.header1{ 
+
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    justify-content: flex-start;
+   
+}
+.address{
+    color: #FFFFFF;
+     display: flex;
+
+    flex-direction: row;
+    margin-left: 20px;
+    
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    color: rgb(173, 173, 132);
+}
+
+.name1{
+    margin-left: 15px;
+   
+    color: #FFFFFF;
+}
+
+.text1{
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+.card1{
+     padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
